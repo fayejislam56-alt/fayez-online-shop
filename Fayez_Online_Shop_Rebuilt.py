@@ -3256,6 +3256,10 @@ def init_db():
             print(f'Himalaya additional catalogue: added {extra_added} products.')
 
 
+if __name__ != '__main__':
+    init_db()
+
+
 if __name__ == '__main__':
     # Make a SQLite backup before any startup migrations or seed operations.
     if os.path.isfile(DATABASE):
